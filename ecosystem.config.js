@@ -5,7 +5,7 @@ module.exports = {
     instances: 1 ,
     autorestart: true,
     watch: false,
-    max_memory_restart: '0.5G',
+    max_memory_restart: '1G',
     output: 'logs/out.log',
     error: 'logs/error.log',
     log: 'logs/combined.outerr.log',
