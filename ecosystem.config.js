@@ -5,7 +5,7 @@ module.exports = {
     instances: 1 ,
     autorestart: true,
     watch: false,
-    max_memory_restart: '1G',
+    max_memory_restart: '0.5G',
     output: 'logs/out.log',
     error: 'logs/error.log',
     log: 'logs/combined.outerr.log',
@@ -21,11 +21,11 @@ module.exports = {
   deploy: {
     production: {
       user: 'root',
-      host: ['139.224.234.213'],
+      host: ['150.158.181.250'],
       port: '22',
       ref : 'origin/master',
-      repo: 'git@github.com:bailicangdu/node-elm.git',
-      path: '/root/mygit/node-elm',
+      repo: 'git@github.com:2283096115/node-elm.git',
+      path: '/data/code/node-elm',
       'ssh_options': 'StrictHostKeyChecking=no',
       'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production',
     }
